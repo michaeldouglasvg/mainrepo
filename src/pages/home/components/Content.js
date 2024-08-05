@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { images } from "../../../constants/AssetsFile"
 import Typed from 'typed.js';
 import AOS from 'aos';
@@ -7,9 +7,6 @@ import { useSweetAlert } from '../../../context/alerts/Sweetalert';
 
 const Content = () => {
   const {toastAlert} = useSweetAlert();
-  const [openProfile, setOpenProfile] = useState(false);
-
-  const openExperienceTab = () =>  setOpenProfile(!openProfile);
 
   const hireMeFireButton = () => {
     toastAlert("top-end", "success", "Am available to work use contact form or reach out to me through email.")
@@ -42,11 +39,6 @@ const Content = () => {
           <div className="description" data-aos="zoom-out-up"><p>Passionate about crafting innovative solutions through web and app development, I delve into the realms of Machine Learning and Data Science to drive meaningful insights and create impactful experiences. With a fervent dedication to technology, I strive to push boundaries and make a difference.</p></div>
           <div className="buttons">
               <button onClick={hireMeFireButton}>Hire&nbsp;me</button>
-              <button onClick={openExperienceTab} style={{background: openProfile && "orange"}}>
-                {
-                  openProfile ? "Close Experience" : "Experience and More"
-                }
-              </button>
           </div>
         </article>
         <article className="flexbox HomeImageContainer">
