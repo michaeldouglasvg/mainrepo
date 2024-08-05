@@ -13,13 +13,22 @@ const ProfileInformation = ({ colapsAndExpandExp, expandExp }) => {
             <div className="ContentSection">
                 <div className="topsection">
                     <div className='buttonexp'>
-                        <button className="btns" onClick={() => setActivateScreen("Experience")}>
+                        <button className="btns"
+                        style={{background: activateScreen === "Experience" && "skyblue", 
+                            color: activateScreen === "Experience" && "white"
+                        }} onClick={() => setActivateScreen("Experience")}>
                             <span>Experience</span>
                         </button>
-                        <button className="btns" onClick={() => setActivateScreen("Resume")}>
+                        <button className="btns"
+                        style={{background: activateScreen === "Resume" && "skyblue",
+                            color: activateScreen === "Resume" && "white"
+                        }} onClick={() => setActivateScreen("Resume")}>
                             <span>Resume/CV</span>
                         </button>
-                        <button className="btns" onClick={() => setActivateScreen("Certificates")}>
+                        <button className="btns"
+                        style={{background: activateScreen === "Certificates" && "skyblue",
+                            color: activateScreen === "Certificates" && "white"
+                        }} onClick={() => setActivateScreen("Certificates")}>
                             <span>Certificates</span>
                         </button>
                     </div>

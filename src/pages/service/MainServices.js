@@ -17,6 +17,11 @@ const MainServices = () => {
     AOS.init();
   })
 
+  const getCurrentClickedService = (serviceType) => {
+    setShareButtons(false)
+    return serviceType ? setShareButtons(serviceType) : false
+  }
+
   return (
     <section className='Services'>
       {/* <div className="heading"><h1 data-aos="zoom-out-up">My Services</h1></div> */}
@@ -36,7 +41,7 @@ const MainServices = () => {
             </div>
             <div className='MainBottomSectionsCard'>
               <div className="button">
-                <button onClick={() => setShareButtons(service.type)} style={{background: showShare !== service.type?"":"orangered"}}>
+                <button onClick={() => getCurrentClickedService(service.type)} style={{background: showShare !== service.type?"":"orangered", cursor: "pointer"}}>
                 {showShare !== service.type ? "Request Service":"Not Interested"}</button>
               </div>
               {showShare === service.type && <div className="sharebuttons">

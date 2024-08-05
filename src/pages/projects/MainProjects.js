@@ -21,19 +21,19 @@ const MainProjects = () => {
         <h1 data-aos="zoom-out-up">Projects({ProjectData&&ProjectData.length})</h1>
         <div className="summary">
             <div className="cardSamamry" data-aos="flip-up">
-                <h2>({app && app.length})</h2>
+                <p className='count'>({app && app.length})</p>
                 <h2>Apps</h2>
             </div>
             <div className="cardSamamry" data-aos="flip-up">
-                <h2>({website && website.length})</h2>
+                <p className='count'>({website && website.length})</p>
                 <h2>Web</h2>
             </div>
             <div className="cardSamamry" data-aos="flip-up">
-                <h2>({ds && ds.length})</h2>
+                <p className='count'>({ds && ds.length})</p>
                 <h2>DS</h2>
             </div>
             <div className="cardSamamry" data-aos="flip-up">
-                <h2>({ml && ml.length})</h2>
+                <p className='count'>({ml && ml.length})</p>
                 <h2>ML</h2>
             </div>
         </div>

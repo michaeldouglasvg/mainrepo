@@ -14,19 +14,19 @@ const MainContact = () => {
       <div className="summary">
           <div className="cardSamamry"  data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">
-              <h2>Data</h2>
+              <h2>Full Stack</h2>
           </div>
           <div className="cardSamamry"  data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">
-              <h2>Business Growth</h2>
+              <h2>A.I/M.L</h2>
           </div>
           <div className="cardSamamry"  data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">
-              <h2>Automation</h2>
+              <h2>Apps</h2>
           </div>
           <div className="cardSamamry"  data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">
-              <h2>Development</h2>
+              <h2>D.L/D.S</h2>
           </div>
       </div>
     </div>

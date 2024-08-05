@@ -440,6 +440,9 @@ body{
 // Serices styles
 .Services {
     width: 100%;
+    h2{
+        color: grey;
+    }
     .content-section{
        display: flex;
        align-items: center;
@@ -548,6 +551,13 @@ body{
 // Projetcs page
 .Projects{
     width: 100%;
+    h2{
+        color: grey;
+    }
+    .count{
+        padding-right: .4rem;
+        font-size: 1.2rem;
+    }
     .content-section{
         width: 100%;
         display: flex;
@@ -614,6 +624,9 @@ body{
 // Contacts pages
 .ContactPage{
     width: 100%;
+    h2{
+        color: grey;
+    }
     .ContactDisplay{
         width: 100%;
         .top-message{
@@ -624,6 +637,7 @@ body{
             p{
                 font-size: .9rem;
                 line-height: 1.4rem;
+                color: grey;
             }
         }
         .socialmedia-container{
